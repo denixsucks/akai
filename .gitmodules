@@ -1,0 +1,6 @@
+[submodule "external/engine/external/glm"]
+	path = external/engine/external/glm
+	url = https://github.com/g-truc/glm
+[submodule "external/engine/external/glfw"]
+	path = external/engine/external/glfw
+	url = https://github.com/glfw/glfw
