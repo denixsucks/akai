@@ -1,0 +1,1044 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "external/engine",
+					"childIndexes" : 
+					[
+						2,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine-Debug-73cd01d4a2e3ba661a65.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/engine",
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"build" : "external/engine/external/glm",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-external.engine.external.glm-Debug-0717eaafd5f6fa72fa2b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "external/engine/external/glm",
+					"targetIndexes" : 
+					[
+						2,
+						8
+					]
+				},
+				{
+					"build" : "external/engine/external/glm/glm",
+					"jsonFile" : "directory-external.engine.external.glm.glm-Debug-ff6a2a3eea31eee1b998.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "external/engine/external/glm/glm"
+				},
+				{
+					"build" : "external/engine/external/glfw",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine.external.glfw-Debug-2d336ad21d8e21ff7d17.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "external/engine/external/glfw",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "external/engine/external/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine.external.glfw.src-Debug-3ea14eec2d3f197376e5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "external/engine/external/glfw/src",
+					"targetIndexes" : 
+					[
+						7,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "akai_app",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "akai_engine",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "glm",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4,
+						5
+					],
+					"name" : "GLFW",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						3,
+						7,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-a692f7c1255131b58e22.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@546e0ca763cf6a9ac01c",
+					"jsonFile" : "target-ALL_BUILD-Debug-e1c51cba0d7f4ee8cb46.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@21b073aadb1c2fadf91a",
+					"jsonFile" : "target-ALL_BUILD-Debug-a47735e1ca5e3bb63074.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ALL_BUILD::@cdf55ebf1e1a62fe09be",
+					"jsonFile" : "target-ALL_BUILD-Debug-6b0139293eae62f98df4.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-82bd91d6bbf6cb26f089.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "akai_app::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-akai_app-Debug-28c2b1e4aafeb896ffbe.json",
+					"name" : "akai_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "akai_engine::@546e0ca763cf6a9ac01c",
+					"jsonFile" : "target-akai_engine-Debug-ce1855a2bbf4efc0d6f2.json",
+					"name" : "akai_engine",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "glfw::@e8a57d033cba2b90e020",
+					"jsonFile" : "target-glfw-Debug-450060876d45eac3b184.json",
+					"name" : "glfw",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@21b073aadb1c2fadf91a",
+					"jsonFile" : "target-uninstall-Debug-1f004aa42a8c1faf5021.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "update_mappings::@e8a57d033cba2b90e020",
+					"jsonFile" : "target-update_mappings-Debug-ee2d7a0ceecf6c730a10.json",
+					"name" : "update_mappings",
+					"projectIndex" : 3
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "external/engine",
+					"childIndexes" : 
+					[
+						2,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine-Release-73cd01d4a2e3ba661a65.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/engine",
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"build" : "external/engine/external/glm",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-external.engine.external.glm-Release-0717eaafd5f6fa72fa2b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "external/engine/external/glm",
+					"targetIndexes" : 
+					[
+						2,
+						8
+					]
+				},
+				{
+					"build" : "external/engine/external/glm/glm",
+					"jsonFile" : "directory-external.engine.external.glm.glm-Release-ff6a2a3eea31eee1b998.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "external/engine/external/glm/glm"
+				},
+				{
+					"build" : "external/engine/external/glfw",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine.external.glfw-Release-2d336ad21d8e21ff7d17.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "external/engine/external/glfw",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "external/engine/external/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine.external.glfw.src-Release-6c40948d87c87209a198.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "external/engine/external/glfw/src",
+					"targetIndexes" : 
+					[
+						7,
+						9
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "akai_app",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "akai_engine",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "glm",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4,
+						5
+					],
+					"name" : "GLFW",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						3,
+						7,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-a692f7c1255131b58e22.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@546e0ca763cf6a9ac01c",
+					"jsonFile" : "target-ALL_BUILD-Release-e1c51cba0d7f4ee8cb46.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@21b073aadb1c2fadf91a",
+					"jsonFile" : "target-ALL_BUILD-Release-a47735e1ca5e3bb63074.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ALL_BUILD::@cdf55ebf1e1a62fe09be",
+					"jsonFile" : "target-ALL_BUILD-Release-6b0139293eae62f98df4.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-82bd91d6bbf6cb26f089.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "akai_app::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-akai_app-Release-c16d0d2e9e704c5f7293.json",
+					"name" : "akai_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "akai_engine::@546e0ca763cf6a9ac01c",
+					"jsonFile" : "target-akai_engine-Release-94e16b383510ade23b3a.json",
+					"name" : "akai_engine",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "glfw::@e8a57d033cba2b90e020",
+					"jsonFile" : "target-glfw-Release-d57092debfed83247947.json",
+					"name" : "glfw",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@21b073aadb1c2fadf91a",
+					"jsonFile" : "target-uninstall-Release-1f004aa42a8c1faf5021.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "update_mappings::@e8a57d033cba2b90e020",
+					"jsonFile" : "target-update_mappings-Release-ee2d7a0ceecf6c730a10.json",
+					"name" : "update_mappings",
+					"projectIndex" : 3
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "external/engine",
+					"childIndexes" : 
+					[
+						2,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine-MinSizeRel-73cd01d4a2e3ba661a65.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/engine",
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"build" : "external/engine/external/glm",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-external.engine.external.glm-MinSizeRel-0717eaafd5f6fa72fa2b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "external/engine/external/glm",
+					"targetIndexes" : 
+					[
+						2,
+						8
+					]
+				},
+				{
+					"build" : "external/engine/external/glm/glm",
+					"jsonFile" : "directory-external.engine.external.glm.glm-MinSizeRel-ff6a2a3eea31eee1b998.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "external/engine/external/glm/glm"
+				},
+				{
+					"build" : "external/engine/external/glfw",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine.external.glfw-MinSizeRel-2d336ad21d8e21ff7d17.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "external/engine/external/glfw",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "external/engine/external/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine.external.glfw.src-MinSizeRel-8e753ab32e5d7031d60d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "external/engine/external/glfw/src",
+					"targetIndexes" : 
+					[
+						7,
+						9
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "akai_app",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "akai_engine",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "glm",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4,
+						5
+					],
+					"name" : "GLFW",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						3,
+						7,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-a692f7c1255131b58e22.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@546e0ca763cf6a9ac01c",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-e1c51cba0d7f4ee8cb46.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@21b073aadb1c2fadf91a",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-a47735e1ca5e3bb63074.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ALL_BUILD::@cdf55ebf1e1a62fe09be",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-6b0139293eae62f98df4.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-82bd91d6bbf6cb26f089.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "akai_app::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-akai_app-MinSizeRel-2c34e5a723d7d1102785.json",
+					"name" : "akai_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "akai_engine::@546e0ca763cf6a9ac01c",
+					"jsonFile" : "target-akai_engine-MinSizeRel-b6f56ad8e9499359bf53.json",
+					"name" : "akai_engine",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "glfw::@e8a57d033cba2b90e020",
+					"jsonFile" : "target-glfw-MinSizeRel-45855c9735eddd990055.json",
+					"name" : "glfw",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@21b073aadb1c2fadf91a",
+					"jsonFile" : "target-uninstall-MinSizeRel-1f004aa42a8c1faf5021.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "update_mappings::@e8a57d033cba2b90e020",
+					"jsonFile" : "target-update_mappings-MinSizeRel-ee2d7a0ceecf6c730a10.json",
+					"name" : "update_mappings",
+					"projectIndex" : 3
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "external/engine",
+					"childIndexes" : 
+					[
+						2,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine-RelWithDebInfo-73cd01d4a2e3ba661a65.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/engine",
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"build" : "external/engine/external/glm",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-external.engine.external.glm-RelWithDebInfo-0717eaafd5f6fa72fa2b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "external/engine/external/glm",
+					"targetIndexes" : 
+					[
+						2,
+						8
+					]
+				},
+				{
+					"build" : "external/engine/external/glm/glm",
+					"jsonFile" : "directory-external.engine.external.glm.glm-RelWithDebInfo-ff6a2a3eea31eee1b998.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "external/engine/external/glm/glm"
+				},
+				{
+					"build" : "external/engine/external/glfw",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine.external.glfw-RelWithDebInfo-2d336ad21d8e21ff7d17.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "external/engine/external/glfw",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "external/engine/external/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.engine.external.glfw.src-RelWithDebInfo-72c12a063d0d1889d8c4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "external/engine/external/glfw/src",
+					"targetIndexes" : 
+					[
+						7,
+						9
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "akai_app",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "akai_engine",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "glm",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4,
+						5
+					],
+					"name" : "GLFW",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						3,
+						7,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-a692f7c1255131b58e22.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@546e0ca763cf6a9ac01c",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-e1c51cba0d7f4ee8cb46.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@21b073aadb1c2fadf91a",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-a47735e1ca5e3bb63074.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ALL_BUILD::@cdf55ebf1e1a62fe09be",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-6b0139293eae62f98df4.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-82bd91d6bbf6cb26f089.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "akai_app::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-akai_app-RelWithDebInfo-5c3a7b2254c2c290ed5a.json",
+					"name" : "akai_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "akai_engine::@546e0ca763cf6a9ac01c",
+					"jsonFile" : "target-akai_engine-RelWithDebInfo-61bf5a2f8c35e2318be4.json",
+					"name" : "akai_engine",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "glfw::@e8a57d033cba2b90e020",
+					"jsonFile" : "target-glfw-RelWithDebInfo-07dfe14c98bd2e6bcb22.json",
+					"name" : "glfw",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@21b073aadb1c2fadf91a",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-1f004aa42a8c1faf5021.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "update_mappings::@e8a57d033cba2b90e020",
+					"jsonFile" : "target-update_mappings-RelWithDebInfo-ee2d7a0ceecf6c730a10.json",
+					"name" : "update_mappings",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Administrator/Desktop/akai-engine/build",
+		"source" : "C:/Users/Administrator/Desktop/akai-engine"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

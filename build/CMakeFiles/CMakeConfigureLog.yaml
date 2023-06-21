@@ -1,0 +1,387 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.6.3+07e294721 for .NET Framework
+      Build started 6/21/2023 1:19:59 AM.
+      
+      Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.91
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/3.26.4/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-2lix30"
+      binary: "C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-2lix30"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-2lix30
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4f75f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 6/21/2023 1:20:00 AM.
+        
+        Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lix30\\cmTC_4f75f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_4f75f.dir\\Debug\\".
+          Creating directory "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lix30\\Debug\\".
+          Creating directory "cmTC_4f75f.dir\\Debug\\cmTC_4f75f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_4f75f.dir\\Debug\\cmTC_4f75f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4f75f.dir\\Debug\\\\" /Fd"cmTC_4f75f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Administrator\\scoop\\apps\\cmake\\3.26.4\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32532 for x64
+          CMakeCXXCompilerABI.cpp
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4f75f.dir\\Debug\\\\" /Fd"cmTC_4f75f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Administrator\\scoop\\apps\\cmake\\3.26.4\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lix30\\Debug\\cmTC_4f75f.exe" /INCREMENTAL /ILK:"cmTC_4f75f.dir\\Debug\\cmTC_4f75f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-2lix30/Debug/cmTC_4f75f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-2lix30/Debug/cmTC_4f75f.lib" /MACHINE:X64  /machine:x64 cmTC_4f75f.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4f75f.vcxproj -> C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lix30\\Debug\\cmTC_4f75f.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_4f75f.dir\\Debug\\cmTC_4f75f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4f75f.dir\\Debug\\cmTC_4f75f.tlog\\cmTC_4f75f.lastbuildstate".
+        Done Building Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lix30\\cmTC_4f75f.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.18
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "external/engine/external/glfw/CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.6.3+07e294721 for .NET Framework
+      Build started 6/21/2023 1:20:02 AM.
+      
+      Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.92
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/3.26.4/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "external/engine/external/glfw/CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-71g9rs"
+      binary: "C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-71g9rs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-71g9rs
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_9cd2b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 6/21/2023 1:20:03 AM.
+        
+        Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71g9rs\\cmTC_9cd2b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_9cd2b.dir\\Debug\\".
+          Creating directory "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71g9rs\\Debug\\".
+          Creating directory "cmTC_9cd2b.dir\\Debug\\cmTC_9cd2b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_9cd2b.dir\\Debug\\cmTC_9cd2b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9cd2b.dir\\Debug\\\\" /Fd"cmTC_9cd2b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Administrator\\scoop\\apps\\cmake\\3.26.4\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32532 for x64
+          CMakeCCompilerABI.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9cd2b.dir\\Debug\\\\" /Fd"cmTC_9cd2b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Administrator\\scoop\\apps\\cmake\\3.26.4\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71g9rs\\Debug\\cmTC_9cd2b.exe" /INCREMENTAL /ILK:"cmTC_9cd2b.dir\\Debug\\cmTC_9cd2b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-71g9rs/Debug/cmTC_9cd2b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-71g9rs/Debug/cmTC_9cd2b.lib" /MACHINE:X64  /machine:x64 cmTC_9cd2b.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_9cd2b.vcxproj -> C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71g9rs\\Debug\\cmTC_9cd2b.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_9cd2b.dir\\Debug\\cmTC_9cd2b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_9cd2b.dir\\Debug\\cmTC_9cd2b.tlog\\cmTC_9cd2b.lastbuildstate".
+        Done Building Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71g9rs\\cmTC_9cd2b.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.80
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/engine/external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-ylbsib"
+      binary: "C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-ylbsib"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Administrator/Desktop/akai-engine/external/engine/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-ylbsib
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_900bb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 6/21/2023 1:20:04 AM.
+        
+        Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ylbsib\\cmTC_900bb.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_900bb.dir\\Debug\\".
+          Creating directory "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ylbsib\\Debug\\".
+          Creating directory "cmTC_900bb.dir\\Debug\\cmTC_900bb.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_900bb.dir\\Debug\\cmTC_900bb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_900bb.dir\\Debug\\\\" /Fd"cmTC_900bb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ylbsib\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32532 for x64
+          src.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_900bb.dir\\Debug\\\\" /Fd"cmTC_900bb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ylbsib\\src.c"
+        C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ylbsib\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ylbsib\\cmTC_900bb.vcxproj]
+        Done Building Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ylbsib\\cmTC_900bb.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ylbsib\\cmTC_900bb.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ylbsib\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ylbsib\\cmTC_900bb.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.67
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "external/engine/external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-oneu9h"
+      binary: "C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-oneu9h"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Administrator/Desktop/akai-engine/external/engine/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-oneu9h
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2778f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 6/21/2023 1:20:05 AM.
+        
+        Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oneu9h\\cmTC_2778f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_2778f.dir\\Debug\\".
+          Creating directory "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oneu9h\\Debug\\".
+          Creating directory "cmTC_2778f.dir\\Debug\\cmTC_2778f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_2778f.dir\\Debug\\cmTC_2778f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2778f.dir\\Debug\\\\" /Fd"cmTC_2778f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oneu9h\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32532 for x64
+          CheckFunctionExists.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2778f.dir\\Debug\\\\" /Fd"cmTC_2778f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oneu9h\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oneu9h\\Debug\\cmTC_2778f.exe" /INCREMENTAL /ILK:"cmTC_2778f.dir\\Debug\\cmTC_2778f.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-oneu9h/Debug/cmTC_2778f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-oneu9h/Debug/cmTC_2778f.lib" /MACHINE:X64  /machine:x64 cmTC_2778f.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oneu9h\\cmTC_2778f.vcxproj]
+        Done Building Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oneu9h\\cmTC_2778f.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oneu9h\\cmTC_2778f.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oneu9h\\cmTC_2778f.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.73
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Users/Administrator/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "external/engine/external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-3ozais"
+      binary: "C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-3ozais"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Administrator/Desktop/akai-engine/external/engine/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-3ozais
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1a02a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.6.3+07e294721 for .NET Framework
+        Build started 6/21/2023 1:20:06 AM.
+        
+        Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ozais\\cmTC_1a02a.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_1a02a.dir\\Debug\\".
+          Creating directory "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ozais\\Debug\\".
+          Creating directory "cmTC_1a02a.dir\\Debug\\cmTC_1a02a.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1a02a.dir\\Debug\\cmTC_1a02a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1a02a.dir\\Debug\\\\" /Fd"cmTC_1a02a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ozais\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32532 for x64
+          CheckFunctionExists.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1a02a.dir\\Debug\\\\" /Fd"cmTC_1a02a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ozais\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ozais\\Debug\\cmTC_1a02a.exe" /INCREMENTAL /ILK:"cmTC_1a02a.dir\\Debug\\cmTC_1a02a.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-3ozais/Debug/cmTC_1a02a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Administrator/Desktop/akai-engine/build/CMakeFiles/CMakeScratch/TryCompile-3ozais/Debug/cmTC_1a02a.lib" /MACHINE:X64  /machine:x64 cmTC_1a02a.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ozais\\cmTC_1a02a.vcxproj]
+        Done Building Project "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ozais\\cmTC_1a02a.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ozais\\cmTC_1a02a.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Administrator\\Desktop\\akai-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3ozais\\cmTC_1a02a.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.83
+        
+      exitCode: 1
+...
