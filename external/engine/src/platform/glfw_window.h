@@ -5,10 +5,10 @@
 
 class WindowGLFW : public Window {
 public:
-  WindowGLFW() = default;
+  WindowGLFW();
   virtual void OpenWindow() override;
   virtual bool Update() override;
 
 private:
-  WindowGLFW* _window;
+  GLFWwindow* _window;
 };

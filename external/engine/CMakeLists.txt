@@ -7,7 +7,7 @@ add_subdirectory(external/glfw)
 
 file(GLOB SOURCES "src/*.cpp", "src/*/*.cpp", "src/*/*/*.cpp") # dont forget to add another layer if you go deep.
 
-add_library(${PROJECT_NAME} src/engine.cpp)
+add_library(${PROJECT_NAME} ${SOURCES})
 
 target_include_directories(${PROJECT_NAME}
   PUBLIC

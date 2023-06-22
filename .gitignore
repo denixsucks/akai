@@ -44,5 +44,5 @@ _deps
 *.out
 *.app
 
-.vscode/
-build/
+.vscode
+build
