@@ -1,6 +1,7 @@
 #include <iostream>
-#include "akai_engine/platform/game.h"
+#include <akai_engine/platform/game.h>
 #include <akai_engine/service_locator.h>
+#include "render/vulkan/vulkan_renderer.h"
 #include "glfw_window.h"
 
 Game::Game() : Game("") {}
@@ -27,12 +28,19 @@ void Game::Run() {
 
     Update(0.5f);
 
+    ServiceLocator::GetRenderer()->RenderFrame(); // render a frame !
+
   }
 
 }
 
 void Game::initializeServices() {
   ServiceLocator::Provide(new WindowGLFW());
+  RendererSettings settings {
+    .ApplicationName = _title,
+  };
+
+  ServiceLocator::Provide(new VulkanRenderer(), settings);
 }
 
 void Game::shutdownServices() {
