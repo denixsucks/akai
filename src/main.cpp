@@ -1,14 +1,16 @@
 #include <iostream>
-#include <akai_engine/engine.h>
-#include <akai_engine/service_locator.h>
+#include <akai_engine/platform/entry_point.h>
 
-int main()
-{
-  Engine::Init();
-  ServiceLocator::GetWindow()->OpenWindow();
-  while(ServiceLocator::GetWindow()->Update())
-  {
-    
+class TestGame : public Game {
+public:
+  explicit TestGame(std::string title) : Game(std::move(title)) {
+  };
+protected:
+  void Update(float deltaTime) override {
   }
-  return 0;
+};
+
+
+Game* CreateGame() {
+  return new TestGame("Game Name!");
 }

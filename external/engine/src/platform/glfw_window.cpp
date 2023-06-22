@@ -1,3 +1,4 @@
+#include <iostream>
 #include "glfw_window.h"
 
 WindowGLFW::WindowGLFW()
@@ -5,10 +6,10 @@ WindowGLFW::WindowGLFW()
   _window = nullptr;
 }
 
-void WindowGLFW::OpenWindow()
+void WindowGLFW::OpenWindow(WindowData data)
 {
   glfwInit();
-  _window = glfwCreateWindow(800, 600, "Window", nullptr, nullptr);
+  _window = glfwCreateWindow(static_cast<int>(data.width), static_cast<int>(data.height), data.title.c_str(), nullptr, nullptr);
 }
 
 bool WindowGLFW::Update()

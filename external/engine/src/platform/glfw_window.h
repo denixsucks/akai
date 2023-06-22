@@ -6,8 +6,8 @@
 class WindowGLFW : public Window {
 public:
   WindowGLFW();
-  virtual void OpenWindow() override;
-  virtual bool Update() override;
+  void OpenWindow(WindowData data) override;
+  bool Update() override;
 
 private:
   GLFWwindow* _window;
