@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 add_subdirectory(external/glm)
 add_subdirectory(external/glfw)
 add_subdirectory(external/vk-bootstrap)
+# add_subdirectory(external/imgui)
 
 find_package(vulkan REQUIRED)
 
@@ -17,6 +18,7 @@ target_include_directories(${PROJECT_NAME}
     $<INSTALL_INTERFACE:include>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     glm
+    # imgui
   PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${Vulkan_INCLUDE_DIRS}
@@ -27,6 +29,7 @@ target_include_directories(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
   PUBLIC
+    # imgui
     glm
   PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
