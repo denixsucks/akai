@@ -15,11 +15,6 @@ Game::~Game() {
 }
 
 void Game::Run() {
-  ServiceLocator::GetWindow()->OpenWindow({
-    .title = _title,
-    .width = 800,
-    .height = 600,
-  });
   while(_running) {
     if(ServiceLocator::GetWindow()->Update()) {
       _running = false;
@@ -39,6 +34,12 @@ void Game::initializeServices() {
   RendererSettings settings {
     .ApplicationName = _title,
   };
+
+  ServiceLocator::GetWindow()->OpenWindow({
+    .title = _title,
+    .width = 800,
+    .height = 600,
+  });
 
   ServiceLocator::Provide(new VulkanRenderer(), settings);
 }

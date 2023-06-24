@@ -10,7 +10,7 @@ public:
   WindowGLFW();
   void OpenWindow(WindowData data) override;
   bool Update() override;
-
+  std::pair<int, int> GetWindowExtents() override;
   void RequestDrawSurface(std::unordered_map<SurfaceArgs, std::any>) override;
 
 private:

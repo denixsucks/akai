@@ -1,6 +1,7 @@
 #pragma  once
 #include <akai_engine/render/renderer.h>
 #include <vulkan/vulkan.h>
+#include <vector>
 
 class VulkanRenderer : public Renderer {
 public:
@@ -10,6 +11,7 @@ public:
 
 private:
   void initVulkanCore(); 
+  void createSwapchain();
 
   RendererSettings _rendererSettings {};
 
@@ -19,4 +21,12 @@ private:
   VkPhysicalDevice _physicalDevice; // physical device
   VkDevice _device;                 // logical device
   VkSurfaceKHR _surface;
+
+  // Swap Chain
+  VkSwapchainKHR _swapchain;
+  VkFormat _swapchainImageFormat;
+  std::vector<VkImage> _swapchainImages;
+  std::vector<VkImageView> _swapchainImageViews;
+
+
 };
