@@ -1,6 +1,6 @@
 #pragma once
-#include <akai_engine/platform/window.h>
-#include <akai_engine/render/renderer.h>
+#include "platform/window.h"
+#include "render/renderer.h"
 #include <memory>
 
 class ServiceLocator
