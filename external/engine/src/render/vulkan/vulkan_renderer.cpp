@@ -237,10 +237,10 @@ void VulkanRenderer::createFramebuffers()
   framebufferCreateInfo.height = _windowExtent.height;
   framebufferCreateInfo.layers = 1;
 
-  const uint32_t swapchainImageCount = _swapchainImages.size();
+  const uint32_t swapchainImageCount = static_cast<uint32_t>(_swapchainImages.size());
   _framebuffers.resize(swapchainImageCount);
 
-  for (int i = 0; i < swapchainImageCount; i++)
+  for (uint32_t i = 0; i < swapchainImageCount; i++)
   {
     framebufferCreateInfo.pAttachments = &_swapchainImageViews[i];
     VK_CHECK(vkCreateFramebuffer(_device, &framebufferCreateInfo, nullptr, &_framebuffers[i]));
