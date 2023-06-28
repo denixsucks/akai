@@ -77,13 +77,10 @@ void VulkanRenderer::RenderFrame()
       .extent = _windowExtent};
 
   renderPassBeginInfo.framebuffer = _framebuffers[swapchainImageIndex];
-  // connect clear values
   renderPassBeginInfo.clearValueCount = 1;
   renderPassBeginInfo.pClearValues = &clearValue;
 
   vkCmdBeginRenderPass(cmd, &renderPassBeginInfo, VK_SUBPASS_CONTENTS_INLINE);
-
-  // DRAW CALLS
 
   vkCmdEndRenderPass(cmd);
   VK_CHECK(vkEndCommandBuffer(cmd));
@@ -117,15 +114,9 @@ void VulkanRenderer::RenderFrame()
   _frameNumber++;
 }
 
-/*
- * PRIVATE
- */
-
 void VulkanRenderer::initVulkanCore()
 {
-  // Initialize the instance
   vkb::InstanceBuilder builder;
-
   auto builderInstance = builder.set_app_name(_rendererSettings.ApplicationName.c_str())
                              .request_validation_layers(true)
                              .require_api_version(1, 1, 0)
@@ -137,29 +128,26 @@ void VulkanRenderer::initVulkanCore()
   _instance = vkbInstance.instance;
   _debugMessenger = vkbInstance.debug_messenger;
 
-  // request vulkan surface
-  std::unordered_map<SurfaceArgs, std::any> surfaceArgs {
+  std::unordered_map<SurfaceArgs, std::any> surfaceArgs{
       {SurfaceArgs::INSTANCE, _instance},
       // {SurfaceArgs::ALLOCATORS, nullptr}, // calls bad cast (idk why lmao), maybe we shouldn't use nullptr in surface args. -d
       {SurfaceArgs::OUT_SURFACE, &_surface}};
 
   ServiceLocator::GetWindow()->RequestDrawSurface(surfaceArgs);
 
-  // Select physical device
-  vkb::PhysicalDeviceSelector selector { vkbInstance };
-  vkb::PhysicalDevice vkbPhysicalDevice {
+  vkb::PhysicalDeviceSelector selector{vkbInstance};
+  vkb::PhysicalDevice vkbPhysicalDevice{
       selector
           .set_minimum_version(1, 1)
           .set_surface(_surface)
           .select()
           .value()};
 
-  // create the vulkan device
   vkb::DeviceBuilder deviceBuilder{vkbPhysicalDevice};
   vkb::Device vkbDevice{deviceBuilder.build().value()};
 
-  _device = vkbDevice.device;
-  _physicalDevice = vkbPhysicalDevice.physical_device;
+  _device = vkbDevice.device; // logical
+  _physicalDevice = vkbPhysicalDevice.physical_device; // physical
 
   _graphicsQueue = vkbDevice.get_queue(vkb::QueueType::graphics).value();
   _graphicsQueueFamily = vkbDevice.get_queue_index(vkb::QueueType::graphics).value();
@@ -180,7 +168,6 @@ void VulkanRenderer::createSwapchain()
                                     .build()
                                     .value();
 
-  // Store swapchain and all its related images
   _swapchain = vkbSwapchain.swapchain;
   _swapchainImages = vkbSwapchain.get_images().value();
   _swapchainImageViews = vkbSwapchain.get_image_views().value();
