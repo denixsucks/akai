@@ -7,6 +7,3 @@
 [submodule "external/engine/external/vk-bootstrap"]
 	path = external/engine/external/vk-bootstrap
 	url = https://github.com/charles-lunarg/vk-bootstrap
-[submodule "external/engine/external/imgui"]
-	path = external/engine/external/imgui
-	url = https://github.com/ocornut/imgui
