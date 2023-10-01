@@ -52,7 +52,7 @@ void VulkanRenderer::RenderFrame()
   VK_CHECK(vkResetFences(_device, 1, &_renderFence));                     // 0
 
   uint32_t swapchainImageIndex;
-  VK_CHECK(vkAcquireNextImageKHR(_device, _swapchain, 1000000000, _presentSemaphore, nullptr, &swapchainImageIndex));
+  VK_CHECK(vkAcquireNextImageKHR(_device, _swapchain, 1000000000, _presentSemaphore, (VkFence) nullptr, &swapchainImageIndex));
 
   VK_CHECK(vkResetCommandBuffer(_mainCommandBuffer, 0));
 
