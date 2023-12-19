@@ -10,7 +10,6 @@ protected:
   }
 };
 
-
 Game* CreateGame() {
   return new TestGame("Game Name!");
 }
